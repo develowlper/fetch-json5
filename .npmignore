@@ -1,0 +1,6 @@
+.prettierrc
+.eslintrc
+.gitignore
+wallaby.js
+.babelrc
+.nvmrc

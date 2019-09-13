@@ -1,16 +1,18 @@
 {
   "name": "fetch-json5",
-  "version": "0.1.0",
+  "version": "0.1.0-pre1",
   "description": "A small helper to get json5 data via fetch API",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bundle": "rm -rf ./dist && babel src/ --out-dir dist --source-maps"
   },
   "author": "develowlper",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
     "babel-eslint": "^10.0.3",
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.3.0",
