@@ -3,7 +3,8 @@ import JSON5 from 'json5';
 
 test('fetch json', async () => {
   fetch.mockResponseOnce(JSON5.stringify({ test: 'test' }));
-  await fetchJson5('test.json5');
+  const res = await fetchJson5('test.json5');
+  expect(res).toEqual({ test: 'test' });
 });
 
 test('try fetch json', async () => {
