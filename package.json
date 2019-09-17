@@ -1,6 +1,6 @@
 {
   "name": "fetch-json5",
-  "version": "0.1.0-pre1",
+  "version": "0.1.1",
   "description": "A small helper to get json5 data via fetch API",
   "main": "dist/index.js",
   "scripts": {
