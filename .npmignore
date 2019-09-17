@@ -4,3 +4,4 @@
 wallaby.js
 .babelrc
 .nvmrc
+/test
