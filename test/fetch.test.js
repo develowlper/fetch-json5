@@ -10,5 +10,5 @@ test('fetch json', async () => {
 test('try fetch json', async () => {
   fetch.mockResponseOnce('HELLO');
   const res = await tryFetchJson5('test.json5');
-  expect(res).toEqual({});
+  expect(res).toEqual(null);
 });

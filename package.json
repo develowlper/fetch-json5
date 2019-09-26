@@ -7,8 +7,15 @@
     "test": "jest",
     "bundle": "rm -rf ./dist && babel src/ --out-dir dist --source-maps"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/develowlper/fetch-json5.git"
+  },
   "author": "develowlper",
   "license": "ISC",
+  "dependencies": {
+    "json5": "^2.1.0"
+  },
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
@@ -20,8 +27,5 @@
     "jest": "^24.9.0",
     "jest-fetch-mock": "^2.1.2",
     "prettier": "^1.18.2"
-  },
-  "dependencies": {
-    "json5": "^2.1.0"
   }
 }

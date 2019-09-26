@@ -9,9 +9,8 @@ const tryFetchJson5 = async path => {
     return JSON5.parse(await (await fetch(path)).text());
   } catch (e) {
     console.warn(`Fetching ${path} caused the following error:`, e);
-    console.warn("Returning '{}' as fallback.");
   }
-  return {};
+  return null;
 };
 
 export { tryFetchJson5, fetchJson5 };
