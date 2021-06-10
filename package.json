@@ -1,11 +1,13 @@
 {
   "name": "fetch-json5",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small helper to get json5 data via fetch API",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "bundle": "rm -rf ./dist && babel src/ --out-dir dist --source-maps"
+    "bundle": "rm -rf ./dist && babel src/ --out-dir dist --source-maps",
+    "release": "standard-version",
+    "release:dry": "npm run release -- --dry-run"
   },
   "repository": {
     "type": "git",
